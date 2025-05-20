@@ -1,1 +1,150 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url(Myfonts/Norse-Bold.otf) format('opentype');
+}
 
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: #0e0d0d;
+}
+
+.left-panel {
+  flex: 0.8;
+  background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  
+  
+}
+
+.logo-box {
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 30%;
+}
+.logo-box h1{
+  font-family: 'MyCustomFont';
+}
+.logo-box img {
+  height: 100px;
+}
+
+
+.right-panel {
+  flex: 1.2;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  
+}
+
+.right-panel h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  
+}
+
+.form-text {
+  grid-column: span 2;
+}
+
+.form-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+form label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+form input {
+  width: 50%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="password"]:invalid {
+  border: 2px solid red;
+}
+
+
+form input:focus {
+  border-color: #4d90fe;
+  outline: none;
+  box-shadow: 0 0 3px #4d90fe;
+}
+
+
+.form-button {
+  grid-column: span 2;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 12px;
+  width: 40%;
+  background-color:#596D48 ;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: #ccc;
+}
+
+form button:hover {
+  background-color: #4d5d3e;
+}
+
+p a {
+  text-decoration: none;
+  color: #444;
+}
+ 
